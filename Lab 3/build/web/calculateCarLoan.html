@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Perform Car Loan Calculation</h1>
+        <form id="CarLoanForm" action="processCalculateCarLoan.jsp" method="post" onsubmit="return checkICNo()">
+            <fieldset>
+                <legend>Loan Calculation</legend>
+                <label for="loanamount">Loan Amount *</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="loanamount" name="loan_amount" size="15" placeholder="Amount"><br/>
+
+                <label for="period">Period</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="period">
+                    <option value="3">3 years</option>
+                    <option value="4">4 years</option>
+                    <option value="5">5 years</option>
+                    <option value="7">7 years</option>
+                </select>
+
+                <p><input type="submit" id="btnSubmit" value="Submit"/>
+                    <input type="reset" id="btnCancel" value="Cancel"/>
+                </p>
+            </fieldset>
+        </form>
+        &copy;2023-Ferrari
+    </body>
+</html>
