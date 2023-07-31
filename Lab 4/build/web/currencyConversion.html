@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Currency Converter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle">
+        <style>
+            #conv{
+                color: #7F00FF;
+                font-family: "Dongle", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Use JSP Declaration tag, JSP Scriplet and JSP Expression in application</h1><br>
+        <h1 id="conv">Currency Conversion</h1>
+        <form name="currencyForm" method="post" action="processCurrency.jsp">
+            <label for="amount">Amount (in RM)  </label>
+            <input name="amount" type="number" placeholder="(in RM)"/><br><br>
+            <label for="currency">Convert to </label>
+            <select name="currency" size="1">
+                <option value="1">USD</option>
+                <option value="2">Sterling</option>
+                <option value="3">Euro</option>
+            </select><br><br>
+            <input name="submitBtn" type="submit">
+            <input name="cancelBtn" type="reset">
+        </form><br><br>
+        &copy;2023-Azim S63190
+    </body>
+</html>

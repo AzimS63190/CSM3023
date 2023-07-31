@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>JSP Scripting</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dongle">
+        <style>
+            #disc{
+                color: #7F00FF;
+                font-family: "Dongle", sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Use JSP Scriplet and JSP Expression in application</h1><br>
+        <h1 id="disc">Customer discount</h1>
+        <form name="discForm" method="post" action="processCustomer.jsp">
+            <label for="cust_no">Customer Code  </label>
+            <input name="cust_no" type="text" placeholder="Key-in customer code"/><br><br>
+            <label for="quantity">Quantity  </label>
+            <input name="quantity" type="number" placeholder="Key-in quantity"/><br><br>
+            <label for="cust_type">Customer Type  </label>
+            <input name="cust_type" type="radio" value="1"/>Normal Customer
+            <input name="cust_type" type="radio" value="2"/>Privilege Customer<br><br>
+            <input name="submitBtn" type="submit">&nbsp;
+            <input name="cancelBtn" type="reset" value="Cancel">
+        </form>
+    </body>
+</html>

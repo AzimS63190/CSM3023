@@ -1,0 +1,16 @@
+SMAP
+processCurrency_jsp.java
+JSP
+*S JSP
+*F
++ 0 processCurrency.jsp
+processCurrency.jsp
+*L
+5,20:66
+25,15:87
+39,2:102
+41,21:11
+61:104
+62,2:105,3
+64,4:111
+*E
