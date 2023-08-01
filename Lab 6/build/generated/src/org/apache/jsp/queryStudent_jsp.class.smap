@@ -1,0 +1,14 @@
+SMAP
+queryStudent_jsp.java
+JSP
+*S JSP
+*F
++ 0 queryStudent.jsp
+queryStudent.jsp
+*L
+5,27:45
+32,9:73
+40,2:82
+42,28:85
+69,6:113
+*E
