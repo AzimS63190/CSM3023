@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>User Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="userRegistration" action="processUser.jsp" method="POST">
+            <fieldset>
+                <legend>User Details</legend>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="fname" name="fname" size="50" placeholder="Enter first name" required="required" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Surname</td>
+                        <td><input type="text" id="sname" name="sname" size="50" placeholder="Enter surname" required="required" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" size="10" placeholder="Max 10 characters" required="required" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Male
+                            <input name="gender" value="Male" type="radio" checked>
+                            &nbsp;
+                            Female
+                            <input name="gender" value="Female" type="radio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type of User</td>
+                        <td>
+                            <select name="userType">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prefer Language</td>
+                        <td><input name="lang" value="Malay" type="checkbox" checked>
+                            Malay
+                            &nbsp;
+                            <input name="lang" value="English" type="checkbox">
+                            English
+                            &nbsp;
+                            <input name="lang" value="Mandarin" type="checkbox">
+                            Mandarin
+                            &nbsp;
+                            <input name="lang" value="Tamil" type="checkbox">
+                            Tamil  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br/>
+                            <input type="submit" name="Submit" value="Submit" />
+                            <input type="reset" name="Cancel" value="Cancel" />
+                        </td> 
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
